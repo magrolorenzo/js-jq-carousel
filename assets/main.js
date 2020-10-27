@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     // Funzione per click freccia destra
     $('.right-side i').click( function() {
 
@@ -74,8 +73,8 @@ $(document).ready(function () {
 
     });
 
+    // Funzione per cliccare i circles
     $('.fa-circle').click( function(){
-
         // Memorizzo il circle attualmente attivo
         var current_circle = $('i.fas.fa-circle');
 
@@ -100,36 +99,5 @@ $(document).ready(function () {
         // Rendo attiva l'immagine legata al cerchio
         $('.slides img:nth-child('+nth+')').addClass('is-visible');
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
