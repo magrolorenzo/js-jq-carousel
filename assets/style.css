@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-section{
+    display: flex;
+    height: 100vh;
+    background-color: #626262;
+}
+
+.carousel-wrapper{
+    width: 70%;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid yellow;
+}
+
+.left-side, .right-side{
+    width: 20%;
+    display: flex;
+    border: 1px solid lightgreen;
+
+}
+
+.left-side i, .right-side i{
+    margin: auto;
+
+
+}
+
+.center{
+    width: 60%;
+}
+
+.center img{
+    /* display: none; */
+    width: 100%;
+}
