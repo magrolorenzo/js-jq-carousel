@@ -74,5 +74,62 @@ $(document).ready(function () {
 
     });
 
+    $('.fa-circle').click( function(){
+
+        // Memorizzo il circle attualmente attivo
+        var current_circle = $('i.fas.fa-circle');
+
+        //  Memorizzo l'immagine corrente
+        var current_img = $('img.is-visible')
+
+        // E la posizione come figlio rispetto al suo padre contenitore
+        var nth = $(this).index() + 1;
+        console.log(nth);
+
+        // Riempio il cerchio su cui ho cliccato
+        $(this).addClass('fas');
+        $(this).removeClass('far');
+
+        // E rendo normale il cerchio precedentemente attivo
+        current_circle.removeClass('fas');
+        current_circle.addClass('far');
+
+        // Tolgo all'immagine corrente la classe is-visible
+        current_img.removeClass('is-visible');
+
+        // Rendo attiva l'immagine legata al cerchio
+        $('.slides img:nth-child('+nth+')').addClass('is-visible');
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
