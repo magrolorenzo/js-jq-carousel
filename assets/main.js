@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    alert('SCRIPT OK');
 
+    // Funzione per click freccia destra
     $('.right-side i').click( function() {
 
         //  Memorizzo l'immagine corrente
@@ -17,6 +17,6 @@ $(document).ready(function () {
             $('.slides img:first-child').addClass('is-visible');
         }
 
-    })
+    });
 
 });
